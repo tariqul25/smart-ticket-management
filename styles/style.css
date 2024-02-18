@@ -18,3 +18,22 @@
     border-radius: 10px;
 }
 
+.container-of-selected-seat{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 12-column grid */
+    gap: 10px;
+}
+
+.col-span-4 {
+    grid-column: span 4;
+}
+
+.col-span-8 {
+    grid-column: span 8;
+}
+.col-span-4-seat-1{
+    grid-column: span 4;
+}
+.col-span-4-seat-2{
+    grid-column: span 4;
+}
