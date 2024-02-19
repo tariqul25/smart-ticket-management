@@ -61,6 +61,7 @@ function applyCoupon() {
     }
     const discountedTotal = totalPrice - discount;
     grandTotal.textContent = discountedTotal;
+    document.getElementById('apply').style.display='none'
 }
 
 // applying the coupon
