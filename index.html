@@ -18,49 +18,64 @@
 
 <body>
 
-    <header>
+    <header class="mx-14">
         <!-- navbar section -->
-        <nav>
-            <div class="mx-10 mt-10 ">
-                <div class="flex justify-between">
-                    <h1 class="text-3xl font-raleway cursor-pointer">M-Tecket</h1>
-                    <div class=" flex-row justify-center items-center ">
-                        <ul class=" flex  gap-5 p-2  cursor-pointer">
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Destination</li>
-                            <li>Search</li>
+        <nav >
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
                         </ul>
                     </div>
-                    <div class="flex bg-[#1DD1001A] space-x-4 border rounded-xl">
-                        <a href="">
-                            <h1 class="font-raleway p-2">Bus</h1>
-                        </a>
+                    <a class="btn btn-ghost text-3xl font-raleway">M-Ticket</a>
+                </div>
+                <div class="navbar-center hidden mt-3 lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <button class="flex btn border-green-400">
+                        <a class=" text-[#1DD100] font-raleway  ">BUS </a>
                         <img src="images/bus-icon.png" alt="">
-                    </div>
+                    </button>
                 </div>
             </div>
         </nav>
-
-        </section>
     </header>
     <!-- main section -->
     <main>
         <!-- banner section -->
-        <section class="ml-10 mr-20 mt-20">
+        <section class="mx-16 mt-10">
             <div>
                 <div class="hero min-h-screen rounded-3xl bg-[#030712]"
                     style="background-image: url(images/banner.png);">
                     <div class="hero-overlay bg-opacity-60"></div>
                     <div class="hero-content text-center text-neutral-content">
                         <div class="max-w-md">
-                            <h1 class=" mb-10 text-3xl font-raleway font-bold">End-to-End Travel with </h1>
-                            <h2 class="text-3xl mb-5 font-raleway text-red-400">P Paribahan</h2>
+                            <h1 class=" mb-10 text-4xl text-white font-raleway">End-to-End Travel with </h1>
+                            <h2 class="text-3xl mb-5 font-raleway text-[#1DD100]">P Paribahan</h2>
                             <p>Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
                                 excepturi
                                 exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
                             <div>
-                                <a href="#ticket"><button class="btn btn-success mb-28">Buy Tickets</button></a>
+                                <a href="#ticket"><button class="btn btn-success mb-28 bg-[#1DD100] font-semibold">Buy
+                                        Tickets</button></a>
                             </div>
                         </div>
                     </div>
@@ -96,7 +111,7 @@
         </section>
         <!-- coupon code section -->
         <section>
-            <div class="mr-20 ml-10 mt-24">
+            <div class="mx-16 mt-24">
                 <h1 class="text-5xl font-raleway text-center mb-10">Best offers for you</h1>
                 <div class="flex gap-5  flex-col w-full lg:flex-row">
                     <div class=" grid flex-grow h-40 card bg-base-300 bg-[#FFBF0F] rounded-box py-5">
@@ -132,7 +147,7 @@
             </div>
 
             <div class="text-center">
-                <button class="btn text-white bg-[#1DD100] ">See All Offers</button>
+                <button class="btn border-green-400 fornt-inte text-[#1DD100]">See All Offers</button>
             </div>
 
         </section>
@@ -144,17 +159,17 @@
                     testing features allow for a streamlined .</p>
             </div>
             <!-- ticket section -->
-            <div class="bg-[#FFFFFF] mt-10 rounded-3xl border-2 mx-24">
+            <div class="bg-[#FFFFFF] mt-10 rounded-3xl mx-24">
                 <div class="md:flex pl-32 pr-28  justify-between ">
                     <!-- count section -->
                     <div>
-                        <div class="flex gap-x-40 my-6 mx-5">
+                        <div class="flex gap-x-36 my-6 mx-5">
                             <div class="flex gap-5 ">
                                 <div>
                                     <img src="images/bus-logo.png" alt="">
                                 </div>
                                 <div>
-                                    <h1>Greenline Paribahan</h1>
+                                    <h1 class="font-raleway text-2xl">Greenline Paribahan</h1>
                                     <p>Coach-009-WEB ! AC_Business</p>
                                 </div>
                             </div>
@@ -170,12 +185,12 @@
                         <div class="bg-[#F7F8F8] rounded-3xl mx-5 my-8 px-7 py-6">
                             <div class="flex justify-between mb-6">
                                 <h1>Route</h1>
-                                <h2>Dhaka - Sylhet</h2>
+                                <h2 class="font-raleway">Dhaka - Sylhet</h2>
                             </div>
                             <hr>
                             <div class="flex justify-between mb-6">
                                 <h1>Departure Time</h1>
-                                <h1>9:00 PM</h1>
+                                <h1 class="font-raleway">9:00 PM</h1>
                             </div>
                             <hr>
                             <div>
@@ -190,11 +205,10 @@
                     <div>
                         <img src="images/info-devider.png" alt="">
                     </div>
-                    <!-- price dection -->
                     <div class="flex items-center justify-center">
                         <div class="">
                             <img src="images/fare.png" alt="">
-                            <h1>550 Taka</h1>
+                            <h1 class="text-2xl font-raleway">550 Taka</h1>
                             <p> Per Seat</p>
                         </div>
                     </div>
@@ -202,10 +216,10 @@
 
             </div>
             <!-- seat select -->
-            <section id="ticket" class=" bg-[#FFFFFF] mt-10 rounded-3xl border-2 mx-24">
+            <section id="ticket" class=" bg-[#FFFFFF] mt-10 rounded-3xl mx-24">
                 <div class="container-of-selected-seat md:flex justify-around space-y-10 md:space-y-0 gap-10 p-5">
                     <div class="col-span-8 space-x-10">
-                        <h1 class="text-3xl mb-20">Select Your Seat</h1>
+                        <h1 class="font-raleway text-2xl mb-20">Select Your Seat</h1>
                         <hr>
                         <div class=" md:flex justify-between mt-5 ">
                             <div class="flex">
@@ -214,7 +228,7 @@
                             </div>
                             <div class="flex">
                                 <img src="images/seat-green-filled.png" alt="">
-                                <h1>Selected</h1>
+                                <h1 class="text-[#1DD100] fornt-inte">Selected</h1>
                             </div>
                         </div>
                         <div class="flex justify-end  mt-10">
@@ -322,10 +336,10 @@
                     </div>
 
                     <div class="col-span-4 space-x-5 ">
-                        <h1 class="text-3xl mb-20">Select Your Seat</h1>
+                        <h1 class="text-2xl mb-20 font-raleway">Select Your Seat</h1>
                         <hr>
-                        <div class="overflow-x-auto p-5 bg-[#F7F8F8] rounded-md">
-                            <table id="seatTable" class="table">
+                        <div class="overflow-x-auto p-5 bg-[#F7F8F8] fornt-inte rounded-md">
+                            <table id="seatTable" class="table ">
                                 <!-- head -->
                                 <thead>
                                     <tr>
@@ -336,15 +350,12 @@
                                     </tr>
                                 </thead>
                                 <tbody id="seatBody">
-                                    <!-- Rows will be dynamically added here -->
                                 </tbody>
                             </table>
-
-
                             <hr>
                             <div class="flex justify-between mx-4 mt-3">
                                 <h1>Total Price</h1>
-                                <h2 id="totalPrice">0</h2>
+                                <h2 id="totalPrice">BDT <span>0</span></h2>
                             </div>
                             <div class="mt-5 flex items-center">
                                 <div class="relative w-full">
@@ -352,26 +363,26 @@
                                         class="input input-bordered w-full" />
                                 </div>
                                 <button id="applyCouponBtn"
-                                    class="px-5 py-2 rounded-md absolute ms-48  bg-[#1DD100]">Apply</button>
+                                    class="px-5 py-2 rounded-md absolute ms-48 text-white  bg-[#1DD100]">Apply</button>
                             </div>
                             <div class="flex justify-between mx-4 mb-3">
                                 <h1>Grand Total</h1>
-                                <h2 id="grandTotal">0</h2>
+                                <h2 id="grandTotal">BDT <span>0</span></h2>
                             </div>
                         </div>
                         <div class="mt-5 w-full">
-                            <h1 class="mb-2">Passenger Name*</h1>
+                            <h1 class="mb-2 fornt-inte">Passenger Name*</h1>
                             <input class="input bg-slate-50 w-full" type="text" name="passengerName" id="passengerName"
                                 placeholder="Enter your name">
 
                         </div>
                         <div class="mt-5 w-full">
-                            <h1 class="mb-2">Phone Number*</h1>
+                            <h1 class="mb-2 fornt-inte">Phone Number*</h1>
                             <input class="input bg-slate-50 w-full" type="number" name="phoneNumber" id="phoneNumber"
                                 placeholder="Your phone number">
                         </div>
                         <div class="mt-5 w-full">
-                            <h1 class="mb-2">Email ID</h1>
+                            <h1 class="mb-2 fornt-inte">Email ID</h1>
                             <input class="input bg-slate-50 w-full" type="email" name="email" id="email"
                                 placeholder="Enter your Email">
                         </div>
@@ -379,18 +390,25 @@
                             <button id="nextButton" class="btn w-full bg-[#1DD100] text-white divide-solid"
                                 onclick="my_modal_4.showModal(), nextButtonClick()">Next</button>
                             <dialog id="my_modal_4" class="modal">
-                                <div class="modal-box w-96 max-w-5xl bg-[#FFFFFF] text-center ">
-                                    <div class=" items-center">
-                                        <img class="items-center" src="images/success.png" alt="">
-                                        <h1 class="text-2xl">SUCCESS</h1>
+                                <div class="modal-box w-auto max-w-5xl bg-[#FFFFFF] text-center ">
+                                    <div class="flex justify-center items-center">
+                                        <div>
+                                            <img src="images/success.png" alt="">
+                                            <h1 class="text-2xl text-green-500 mt-5">SUCCESS</h1>
+                                        </div>
                                     </div>
-                                    <!-- <h3 class="font-bold text-3xl">Order confrim</h3> -->
-                                    <p class="py-4 font-inter">Thank you for Booking Our Bus Seats.
-                                        We are working hard to find the best service and deals for you.
-                                        Shortly you will find a confirmation in your email.</p>
+                                    <div>
+
+                                        <p class="py-4 font-bold">Thank you for Booking Our Bus Seats.
+                                            We are working hard to find the best service and deals for you.
+                                        </p>
+                                        <span>Shortly you will find a confirmation in your email.</span>
+                                    </div>
+
                                     <div class="modal-action justify-center">
                                         <form>
-                                            <button id="continueButton" class="btn">Continue</button>
+                                            <button id="continueButton"
+                                                class=" btn w-full bg-[#1DD100] text-white divide-solid">Continue</button>
                                         </form>
                                     </div>
                                 </div>
@@ -409,9 +427,7 @@
         </section>
 
     </main>
-
     <!-- footer section -->
-
     <footer class="bg-black">
         <nav class="footer mt-20 p-10  text-white text-base-content justify-around">
             <div>
