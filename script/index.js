@@ -64,7 +64,28 @@ function applyCoupon() {
     document.getElementById('apply').style.display='noe'
 }
 
+// applying the coupon
+applyCouponBtn.addEventListener('click', applyCoupon);
 
+
+function nextButtonClick() {
+    const selectedSeatCount = parseInt(document.getElementById('selectedSeatsCount').innerText);
+    const passengerName = document.getElementById('passengerName').value.trim();
+    const phoneNumber = document.getElementById('phoneNumber').value.trim();
+    const email = document.getElementById('email').value.trim();
+
+    const nextButton = document.getElementById('nextButton');
+
+    if (selectedSeatCount > 0 && passengerName !== '' && phoneNumber !== '' && email !== '') {
+        nextButton.disabled = false;
+    } else {
+        nextButton.disabled = true; 
+    }
+}
+
+document.getElementById('passengerName').addEventListener('input', nextButtonClick);
+document.getElementById('phoneNumber').addEventListener('input', nextButtonClick);
+document.getElementById('email').addEventListener('input', nextButtonClick);
 
 
 
