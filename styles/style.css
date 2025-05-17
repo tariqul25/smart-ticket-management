@@ -36,3 +36,6 @@
 .col-span-4-seat-2{
     grid-column: span 4;
 }
+.bus{
+    background-size: cover;
+}

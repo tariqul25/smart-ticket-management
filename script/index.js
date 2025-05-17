@@ -1,7 +1,7 @@
 let selectedSeats = [];
-let remainingSeats = 40;
+let remainingSeats = 30;
 let totalPrice = 0;
-const maxSeats = 4;
+const maxSeats = 3;
 
 // Function to handle seat selection
 function selectSeat(seat) {
@@ -12,15 +12,15 @@ function selectSeat(seat) {
         }
         document.getElementById(seat).style.backgroundColor = '';
         remainingSeats++;
-        totalPrice -= 550;
+        totalPrice -= 350;
     } else {
         if (remainingSeats > 0 && selectedSeats.length < maxSeats) {
             selectedSeats.push(seat);
             document.getElementById(seat).style.backgroundColor = '#1DD100';
             remainingSeats--;
-            totalPrice += 550;
+            totalPrice += 350;
 
-            updateSeatDetails(seat, 'Economy', 550);
+            updateSeatDetails(seat, 'Economy', 350);
         } else {
             alert('No more seats available or maximum seats reached.');
         }
@@ -90,7 +90,7 @@ document.getElementById('email').addEventListener('input', nextButtonClick);
 
 
 document.getElementById('continueButton').addEventListener('click', function() {
-    document.getElementById('my_modal_4').close();
+    document.getElementById('my_modal_3').close();
 });
 
 
