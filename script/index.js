@@ -63,3 +63,11 @@ function applyCoupon() {
     grandTotal.textContent = discountedTotal;
     document.getElementById('apply').style.display='noe'
 }
+
+
+
+
+
+document.getElementById('continueButton').addEventListener('click', function() {
+    document.getElementById('my_modal_3').close();
+});
