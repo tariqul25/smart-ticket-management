@@ -49,3 +49,17 @@ function updateSeatDetails(seat, className, price) {
 const couponInput = document.getElementById('couponInput');
 const applyCouponBtn = document.getElementById('applyCouponBtn');
 const grandTotal = document.getElementById('grandTotal');
+
+// Function  coupon discount
+function applyCoupon() {
+    const couponCode = couponInput.value.trim().toUpperCase();
+    let discount = 0;
+    if (couponCode === 'COUPLE 20') {
+        discount = totalPrice * 0.2; 
+    } else if (couponCode === 'NEW15') {
+        discount = totalPrice * 0.15;
+    }
+    const discountedTotal = totalPrice - discount;
+    grandTotal.textContent = discountedTotal;
+    document.getElementById('apply').style.display='noe'
+}
