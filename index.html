@@ -1,120 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bus smart Teckting</title>
     <!-- daisy UI and tailwind css -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style.css" />
 
     <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/f943141dd1.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/f943141dd1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <header class="mx-14">
-      
- <!-- navbar section -->
-        <nav >
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a>Home</a></li>
-                            <li><a>About</a></li>
-                            <li><a>Destination</a></li>
-                            <li><a>Search</a></li>
-                        </ul>
-                    </div>
-                    <a class="btn btn-ghost text-3xl font-raleway">M-Ticket</a>
-                </div>
-                <div class="navbar-center hidden mt-3 lg:flex">
-                    <ul class="menu menu-horizontal px-1">
-                        <li><a>Home</a></li>
-                        <li><a>About</a></li>
-                        <li><a>Destination</a></li>
-                        <li><a>Search</a></li>
-                    </ul>
-                </div>
-                <div class="navbar-end">
-                    <button class="flex btn border-green-400">
-                        <a class=" text-[#1DD100] font-raleway  ">BUS </a>
-                        <img src="images/bus-icon.png" alt="">
-                    </button>
-                </div>
+      <!-- navbar section -->
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+              </ul>
             </div>
-        </nav>
-
+            <a class="btn btn-ghost text-3xl font-raleway">M-Ticket</a>
+          </div>
+          <div class="navbar-center hidden mt-3 lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <button class="flex btn border-green-400">
+              <a class="text-[#1DD100] font-raleway">BUS </a>
+              <img src="images/bus-icon.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </nav>
     </header>
-  
-    <main>
-    <!-- banner section -->
-        <section class="mx-16 mt-10">
-            <div>
-                <div class="hero min-h-screen rounded-3xl bg-[#030712]"
-                    style="background-image: url(images/valentyn-chernetskyi-m0_o8QB-JGg-unsplash.jpg);">
-                    <div class="hero-overlay bg-opacity-60"></div>
-                    <div class="hero-content text-center text-neutral-content">
-                        <div class="max-w-md">
-                            <h1 class=" mb-10 text-4xl text-white font-raleway">Ensure safe Journey with</h1>
-                            <h2 class="text-3xl mb-5 font-raleway text-[#1DD100]">TBS Transport</h2>
-                            <p>We are new in this field.But try our best to satisfy our consumer.We promise that we will be able to change your experience.Trust ourself and make your first journey.Then see what i can do.</p>
-                            <div>
-                                <a href="#ticket"><button class="btn btn-success mb-28 bg-[#1DD100] font-semibold">Get
-                                        Tickets</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-             <div class="flex gap-7 justify-center -mt-20">
-                <!-- card 1 -->
-                <div class="card card-side bg-base-100 shadow-xl px-3 py-2">
-                    <figure><img src="images/people.png" alt="Movie" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title text-3xl font-bold">2K+</h2>
-                        <p>Registered users </p>
-                    </div>
-                </div>
-                <!-- card 2 -->
-                <div class="card card-side bg-base-100 shadow-xl  px-3 py-2">
-                    <figure><img src="images/ticket-cupon.png" alt="Movie" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title text-3xl font-bold">1.7 lacks</h2>
-                        <p>Registered users </p>
-                    </div>
-                </div>
-                <!-- card 3 -->
-                <div class="card card-side bg-base-100 shadow-xl  px-3 py-2">
-                    <figure><img src="images/bus-logo.png" alt="Movie" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title text-3xl font-bold">10K+</h2>
-                        <p>Registered users </p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
+    <main>
+      <!-- banner section -->
+      <section class="mx-16 mt-10">
+        <div>
+          <div
+            class="hero min-h-screen rounded-3xl bg-[#030712]"
+            style="
+              background-image: url(images/valentyn-chernetskyi-m0_o8QB-JGg-unsplash.jpg);
+            "
+          >
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-10 text-4xl text-white font-raleway">
+                  Ensure safe Journey with
+                </h1>
+                <h2 class="text-3xl mb-5 font-raleway text-[#1DD100]">
+                  TBS Transport
+                </h2>
+                <p>
+                  We are new in this field.But try our best to satisfy our
+                  consumer.We promise that we will be able to change your
+                  experience.Trust ourself and make your first journey.Then see
+                  what i can do.
+                </p>
+                <div>
+                  <a href="#ticket"
+                    ><button
+                      class="btn btn-success mb-28 bg-[#1DD100] font-semibold"
+                    >
+                      Get Tickets
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-7 justify-center -mt-20">
+          <!-- card 1 -->
+          <div class="card card-side bg-base-100 shadow-xl px-3 py-2">
+            <figure><img src="images/people.png" alt="Movie" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-3xl font-bold">2K+</h2>
+              <p>Registered users</p>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="card card-side bg-base-100 shadow-xl px-3 py-2">
+            <figure><img src="images/ticket-cupon.png" alt="Movie" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-3xl font-bold">1.7 lacks</h2>
+              <p>Registered users</p>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="card card-side bg-base-100 shadow-xl px-3 py-2">
+            <figure><img src="images/bus-logo.png" alt="Movie" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-3xl font-bold">10K+</h2>
+              <p>Registered users</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- coupon code section -->
+      <section>
+        <div class="mx-16 mt-24">
+          <h1 class="text-5xl font-raleway text-center mb-10">
+            Just take out offer
+          </h1>
+          <div class="flex gap-5 flex-col w-full lg:flex-row">
+            <div
+              class="grid flex-grow h-40 card bg-base-300 bg-[#FFBF0F] rounded-box py-5"
+            >
+              <div class="flex flex-row justify-center items-center">
+                <div class="px-4">
+                  <h1 class="text-3xl font-bold">15% OFF</h1>
+                  <p>on your next purchase</p>
+                  <p>use by January 2025</p>
+                </div>
+                <div class="divider lg:divider-horizontal"></div>
+                <div>
+                  <h1 class="text-2xl font-bold">NEW15</h1>
+                  <p>Coupon Code</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="grid flex-grow h-40 card bg-base-300 bg-[#F78C9C] rounded-box py-5"
+            >
+              <div class="flex flex-row justify-center items-center">
+                <div class="">
+                  <h1 class="text-3xl font-bold">20% OFF</h1>
+                  <p>on your next purchase</p>
+                  <p>use by January 2025</p>
+                </div>
+                <div class="divider lg:divider-horizontal"></div>
+                <div>
+                  <h1 class="text-2xl font-bold">Couple 20</h1>
+                  <p>Coupon Code</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <button class="btn border-green-400 fornt-inte text-[#1DD100]">
+            See All Offers
+          </button>
+        </div>
+      </section>
     </main>
     <!-- footer section -->
-    <footer class="bg-black">
-       
-    </footer>
+    <footer class="bg-black"></footer>
     <script src="script/index.js"></script>
-</body>
-
+  </body>
 </html>
